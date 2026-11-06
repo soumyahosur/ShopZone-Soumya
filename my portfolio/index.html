@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ShopZone - Online Shopping</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+
+    <header class="navbar">
+
+        <div class="logo">
+            <i class="fa-solid fa-bag-shopping"></i>
+            ShopZone
+        </div>
+
+        <div class="search-box">
+
+            <input type="text" id="searchInput"
+            placeholder="Search for products...">
+
+            <button id="searchButton">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+        </div>
+
+        <div class="cart-icon" id="cartButton">
+
+            <i class="fa-solid fa-cart-shopping"></i>
+
+            <span id="cartCount">0</span>
+
+        </div>
+
+    </header>
+
+
+    <!-- HERO SECTION -->
+
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <p class="hero-tag">WELCOME TO SHOPZONE</p>
+
+            <h1>
+                Discover Amazing<br>
+                Products & Deals
+            </h1>
+
+            <p>
+                Find everything you love at incredible prices.
+                Shop smart, shop better!
+            </p>
+
+            <a href="#products" class="shop-btn">
+                Shop Now <i class="fa-solid fa-arrow-right"></i>
+            </a>
+
+        </div>
+
+        <div class="hero-image">
+
+            <img
+            src="https://images.unsplash.com/photo-1607082349566-187342175e2f?w=800"
+            alt="Shopping Banner">
+
+        </div>
+
+    </section>
+
+
+    <!-- FEATURES -->
+
+    <section class="features">
+
+        <div class="feature">
+            <i class="fa-solid fa-truck-fast"></i>
+            <h3>Free Delivery</h3>
+            <p>On selected orders</p>
+        </div>
+
+        <div class="feature">
+            <i class="fa-solid fa-shield-halved"></i>
+            <h3>Secure Payment</h3>
+            <p>100% secure shopping</p>
+        </div>
+
+        <div class="feature">
+            <i class="fa-solid fa-headset"></i>
+            <h3>24/7 Support</h3>
+            <p>We're here to help</p>
+        </div>
+
+        <div class="feature">
+            <i class="fa-solid fa-rotate-left"></i>
+            <h3>Easy Returns</h3>
+            <p>Simple return process</p>
+        </div>
+
+    </section>
+
+
+    <!-- PRODUCTS SECTION -->
+
+    <section class="products-section" id="products">
+
+        <div class="section-heading">
+
+            <div>
+                <p class="small-heading">OUR COLLECTION</p>
+                <h2>Explore Our Products</h2>
+            </div>
+
+            <p>Discover products you'll love!</p>
+
+        </div>
+
+
+        <div id="productContainer" class="product-grid">
+
+            <p class="loading">Loading products...</p>
+
+        </div>
+
+    </section>
+
+
+    <!-- CART SIDEBAR -->
+
+    <div class="cart-overlay" id="cartOverlay"></div>
+
+    <aside class="cart-sidebar" id="cartSidebar">
+
+        <div class="cart-header">
+
+            <h2>
+                <i class="fa-solid fa-cart-shopping"></i>
+                Your Cart
+            </h2>
+
+            <button id="closeCart">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+
+        </div>
+
+
+        <div id="cartItems" class="cart-items">
+
+            <p class="empty-cart">Your cart is empty!</p>
+
+        </div>
+
+
+        <div class="cart-footer">
+
+            <div class="total">
+
+                <span>Total Amount:</span>
+
+                <strong id="cartTotal">₹0</strong>
+
+            </div>
+
+            <button class="checkout-btn" id="checkoutButton">
+                Proceed to Checkout
+                <i class="fa-solid fa-arrow-right"></i>
+            </button>
+
+        </div>
+
+    </aside>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+        <div class="footer-content">
+
+            <h2>ShopZone</h2>
+
+            <p>
+                Your one-stop destination for smart and
+                affordable shopping.
+            </p>
+
+            <div class="social-icons">
+
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-facebook"></i>
+                <i class="fa-brands fa-twitter"></i>
+                <i class="fa-brands fa-linkedin"></i>
+
+            </div>
+
+        </div>
+
+        <p class="copyright">
+            © 2026 ShopZone. All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
